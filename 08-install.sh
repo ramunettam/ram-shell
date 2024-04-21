@@ -16,7 +16,7 @@ VALIDATE(){
 }
 
 
-if [ USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then
  echo "please take acces from super user "
  exit 1
