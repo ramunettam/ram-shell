@@ -4,16 +4,16 @@ SCRIPT_NAME=$((echo $0 | cut -d "." -f1))
 TIMESTAMP=$(DATE +%F-%H-%M-%S)
 LOGFILE=$(($SCRIPT_Name+$TIMESTAMP ))
 
-VALIDATE()
-{
-    if[$1 -ne 0]
-    then
-    echo "$2 install failuer"
-    exit 1
+VALIDATE(){
+   if [ $1 -ne 0 ]
+   then
+        echo "$2...FAILURE"
+        exit 1
     else
-    echo "$2 install sucess"
+        echo "$2...SUCCESS"
     fi
 }
+
 
 
 if[ USERID -ne 0]
