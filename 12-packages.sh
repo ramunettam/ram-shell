@@ -28,7 +28,7 @@ then
    echo "your are super user"
   fi 
 
-  for $i in $@
+  for i in $@
   do
 
   dnf install $i -y &>>LOGFILE
