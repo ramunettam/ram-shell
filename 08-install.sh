@@ -24,4 +24,4 @@ then
   echo "your are super user"
   fi
 
-VALIDATE "$?" "mysql" 
+VALIDATE $? "mysql" 
