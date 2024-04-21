@@ -1,7 +1,7 @@
 #!/bin/bash
 USERID=$((id -u))
 SCRIPT_NAME=$((echo $0 | cut -d "." -f1))
-TIMESTAMP=$DATE +%F-%H-%M-%S
+TIMESTAMP=$(DATE +%F-%H-%M-%S)
 LOGFILE=$(($SCRIPT_Name+$TIMESTAMP ))
 
 VALIDATE()
@@ -24,4 +24,4 @@ then
   echo "your are super user"
   fi
 
-VALIDATE $? "mysql" 
+VALIDATE "$?" "mysql" 
