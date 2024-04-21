@@ -22,6 +22,6 @@ then
  exit 1
  else
   echo "your are super user"
-  fi
-
+  fi 
+  dnf install mysql -y &>>LOGFILE
 VALIDATE $? "mysql" 
