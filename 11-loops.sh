@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-for [ i "$@" ]
+for  i in "$@" 
 do
 
  echo "$i"
